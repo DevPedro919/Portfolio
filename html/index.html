@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>João Silva - Desenvolvedor Full Stack</title>
+     
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- ==================== NAVEGAÇÃO ==================== -->
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top" id="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <i class="fas fa-code"></i> João Silva
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projetos">Projetos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <h1 class="display-4 fw-bold mb-4">
+                            Olá, eu sou <br>
+                            <span class="text-primary">João Silva</span>
+                        </h1>
+                        <p class="lead mb-4">
+                            Desenvolvedor Full Stack especializado em criar soluções digitais elegantes e funcionais para web.
+                        </p>
+                        <div class="d-flex gap-3 flex-wrap">
+                            <button class="btn btn-primary btn-lg" onclick="scrollToSection('projetos')">
+                                <i class="fas fa-folder-open me-2"></i>Ver Projetos
+                            </button>
+                            <button class="btn btn-outline-secondary btn-lg" onclick="scrollToSection('contato')">
+                                <i class="fas fa-envelope me-2"></i>Contato
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image text-center mt-5 mt-lg-0">
+                        <div class="image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face" 
+                                 alt="João Silva" class="img-fluid profile-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SOBRE ==================== -->
+    <section id="sobre" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title fade-in">Sobre Mim</h2>
+            <div class="row">
+                <div class="col-lg-6 fade-in">
+                    <div class="about-content">
+                        <p class="mb-4">
+                            Sou um desenvolvedor full stack com mais de 5 anos de experiência na criação de aplicações web modernas e responsivas. Tenho paixão por tecnologia e estou sempre em busca de novos desafios.
+                        </p>
+                        
+                        <p class="mb-4">
+                            Minha jornada começou com curiosidade sobre como os sites funcionam, e hoje trabalho com as mais modernas tecnologias do mercado, sempre focado em entregar soluções de alta qualidade.
+                        </p>
+                        
+                        <p class="mb-4">
+                            Quando não estou codando, gosto de aprender novas tecnologias, contribuir com projetos open source e compartilhar conhecimento com a comunidade de desenvolvedores.
+                        </p>
+
+                        <div class="stats-row d-flex gap-4 mt-5">
+                            <div class="stat-item">
+                                <h4 class="fw-bold text-primary mb-1">50+</h4>
+                                <p class="text-muted small">Projetos</p>
+                            </div>
+                            <div class="stat-item">
+                                <h4 class="fw-bold text-primary mb-1">5+</h4>
+                                <p class="text-muted small">Anos</p>
+                            </div>
+                            <div class="stat-item">
+                                <h4 class="fw-bold text-primary mb-1">30+</h4>
+                                <p class="text-muted small">Clientes</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="skill-item fade-in">
+                                <div class="skill-icon">
+                                    <i class="fab fa-js-square"></i>
+                                </div>
+                                <h5 class="fw-semibold mb-2">JavaScript</h5>
+                                <p class="text-muted small">ES6+, TypeScript, Node.js</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="skill-item fade-in">
+                                <div class="skill-icon">
+                                    <i class="fab fa-react"></i>
+                                </div>
+                                <h5 class="fw-semibold mb-2">React</h5>
+                                <p class="text-muted small">Hooks, Context API, Redux</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="skill-item fade-in">
+                                <div class="skill-icon">
+                                    <i class="fas fa-database"></i>
+                                </div>
+                                <h5 class="fw-semibold mb-2">Database</h5>
+                                <p class="text-muted small">MongoDB, PostgreSQL, MySQL</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="skill-item fade-in">
+                                <div class="skill-icon">
+                                    <i class="fab fa-aws"></i>
+                                </div>
+                                <h5 class="fw-semibold mb-2">Cloud</h5>
+                                <p class="text-muted small">AWS, Docker, Kubernetes</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PROJETOS ==================== -->
+    <section id="projetos" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">Meus Projetos</h2>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="project-card fade-in h-100">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <i class="fas fa-shopping-cart"></i>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h5 class="fw-semibold mb-3">E-commerce Platform</h5>
+                            <p class="text-muted mb-3">
+                                Plataforma completa de e-commerce com painel administrativo, sistema de pagamentos e gestão de estoque.
+                            </p>
+                            <div class="tech-tags mb-4">
+                                <span class="badge bg-light text-dark">React</span>
+                                <span class="badge bg-light text-dark">Node.js</span>
+                                <span class="badge bg-light text-dark">MongoDB</span>
+                                <span class="badge bg-light text-dark">Stripe</span>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <button class="btn btn-outline-primary btn-sm">
+                                    <i class="fab fa-github me-1"></i>Código
+                                </button>
+                                <button class="btn btn-primary btn-sm">
+                                    <i class="fas fa-external-link-alt me-1"></i>Demo
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="project-card fade-in h-100">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <i class="fas fa-tasks"></i>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h5 class="fw-semibold mb-3">Task Management App</h5>
+                            <p class="text-muted mb-3">
+                                Aplicação de gerenciamento de tarefas com funcionalidades de colaboração em tempo real e notificações.
+                            </p>
+                            <div class="tech-tags mb-4">
+                                <span class="badge bg-light text-dark">Vue.js</span>
+                                <span class="badge bg-light text-dark">Socket.io</span>
+                                <span class="badge bg-light text-dark">Express</span>
+                                <span class="badge bg-light text-dark">PostgreSQL</span>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <button class="btn btn-outline-primary btn-sm">
+                                    <i class="fab fa-github me-1"></i>Código
+                                </button>
+                                <button class="btn btn-primary btn-sm">
+                                    <i class="fas fa-external-link-alt me-1"></i>Demo
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="project-card fade-in h-100">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <i class="fas fa-cloud-sun"></i>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h5 class="fw-semibold mb-3">Weather Dashboard</h5>
+                            <p class="text-muted mb-3">
+                                Dashboard interativo de previsão do tempo com mapas, gráficos e alertas meteorológicos personalizados.
+                            </p>
+                            <div class="tech-tags mb-4">
+                                <span class="badge bg-light text-dark">Angular</span>
+                                <span class="badge bg-light text-dark">Chart.js</span>
+                                <span class="badge bg-light text-dark">Weather API</span>
+                                <span class="badge bg-light text-dark">PWA</span>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <button class="btn btn-outline-primary btn-sm">
+                                    <i class="fab fa-github me-1"></i>Código
+                                </button>
+                                <button class="btn btn-primary btn-sm">
+                                    <i class="fas fa-external-link-alt me-1"></i>Demo
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CONTATO ==================== -->
+    <section id="contato" class="section bg-dark text-white">
+        <div class="container">
+            <h2 class="section-title fade-in text-white">Entre em Contato</h2>
+            <div class="row g-5">
+                <div class="col-lg-6">
+                    <div class="contact-info fade-in">
+                        <h4 class="mb-4">Vamos Conversar!</h4>
+                        <p class="mb-5 text-light">
+                            Estou sempre interessado em novos projetos e oportunidades. Vamos criar algo incrível juntos!
+                        </p>
+                        
+                        <div class="contact-items">
+                            <div class="contact-item mb-4">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h6 class="mb-1">Email</h6>
+                                    <p class="text-light mb-0">joao.silva@email.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item mb-4">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h6 class="mb-1">Telefone</h6>
+                                    <p class="text-light mb-0">+55 (11) 99999-9999</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item mb-4">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h6 class="mb-1">Localização</h6>
+                                    <p class="text-light mb-0">São Paulo, SP - Brasil</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="social-links mt-5">
+                            <a href="#" class="social-link me-3">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="#" class="social-link me-3">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="social-link me-3">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <form class="contact-form fade-in" id="contactForm">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" placeholder="Seu Nome" required>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="email" class="form-control" placeholder="Seu Email" required>
+                            </div>
+                            <div class="col-12">
+                                <input type="text" class="form-control" placeholder="Assunto">
+                            </div>
+                            <div class="col-12">
+                                <textarea class="form-control" rows="6" placeholder="Sua Mensagem" required></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary btn-lg w-100">
+                                    <i class="fas fa-paper-plane me-2"></i>Enviar Mensagem
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer py-4">
+        <div class="container text-center">
+            <p class="mb-2">&copy; 2025 João Silva. Todos os direitos reservados.</p>
+            <p class="text-muted small">Desenvolvido com <i class="fas fa-heart text-danger"></i> e muito ☕</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <!-- JavaScript Personalizado -->
+    <script src="script.js"></script>
+</body>
+</html>
