@@ -52,11 +52,11 @@
                 <div class="col-lg-6">
                     <div class="hero-content">
                         <h1 class="display-4 fw-bold mb-4">
-                            Olá, nos somos <br>
-                            <span class="text-primary">a equipe Yupi </span>
+                            Olá, nós somos <br>
+                            <span class="text-primary typing-text">a equipe Yupi</span>
                         </h1>
                         <p class="lead mb-4">
-                            Desenvolvedores Full Stack especializado em criar soluções digitais elegantes e funcionais para web.
+                            Desenvolvedores Full Stack especializados em criar soluções digitais elegantes e funcionais para web.
                         </p>
                         <div class="d-flex gap-3 flex-wrap">
                             <button class="btn btn-primary btn-lg" onclick="scrollToSection('projetos')">
@@ -71,9 +71,10 @@
                 <div class="col-lg-6">
                     <div class="hero-image text-center mt-5 mt-lg-0">
                         <div class="image-wrapper">
-                            <img src="../img/img.jpeg" alt="Equipe Yupi" class="img-fluid profile-image">
-                                 
-                                 
+                            <div class="profile-placeholder">
+                                <i class="fas fa-users"></i>
+                                <p>Equipe Yupi</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -82,64 +83,101 @@
     </section>
 
     <!-- ==================== SOBRE ==================== -->
-<section id="sobre" class="section bg-light">
-    <div class="container">
-        <h2 class="section-title fade-in">Sobre Mim</h2>
-        <div class="row">
+    <section id="sobre" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title fade-in">Sobre Nossa Equipe</h2>
             
-            <!-- Coluna com imagem maior à esquerda -->
-            <div class="col-lg-6 d-flex align-items-center justify-content-center">
-                <img src="../img/codigo.png" 
-                     alt="Minhas Habilidades" 
-                     class="img-fluid rounded shadow w-100" 
-                     style="max-height: 450px; object-fit: cover;">
+            <!-- Descrição da Equipe -->
+            <div class="row mb-5">
+                <div class="col-lg-8 mx-auto text-center">
+                    <p class="lead fade-in">
+                        Somos uma equipe apaixonada de desenvolvedores Full Stack dedicados a criar soluções digitais inovadoras. 
+                        Combinamos expertise técnica com criatividade para entregar projetos que superam expectativas.
+                    </p>
+                </div>
             </div>
-            
-            <!-- Coluna com habilidades à direita -->
-            <div class="col-lg-6">
-                <h5 class="fw-semibold mb-3">Minhas Principais Habilidades</h5>
-                
-                <div class="mb-3">
-                    <span class="d-block fw-semibold">Java</span>
-                    <div class="progress">
-                        <div class="progress-bar bg-primary" style="width: 90%">90%</div>
+
+            <!-- Estatísticas da Equipe -->
+            <div class="row text-center mb-5 stats-row fade-in">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="stat-item">
+                        <h3 class="display-4 fw-bold text-primary counter" data-target="50">0</h3>
+                        <p class="lead">Projetos Concluídos</p>
                     </div>
                 </div>
-                <div class="mb-3">
-                    <span class="d-block fw-semibold">Banco de dados</span>
-                    <div class="progress">
-                        <div class="progress-bar bg-success" style="width: 85%">85%</div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="stat-item">
+                        <h3 class="display-4 fw-bold text-primary counter" data-target="3">0</h3>
+                        <p class="lead">Desenvolvedores</p>
                     </div>
                 </div>
-                <div class="mb-3">
-                    <span class="d-block fw-semibold">CSS</span>
-                    <div class="progress">
-                        <div class="progress-bar bg-warning" style="width: 80%">80%</div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="stat-item">
+                        <h3 class="display-4 fw-bold text-primary counter" data-target="2">0</h3>
+                        <p class="lead">Anos de Experiência</p>
                     </div>
                 </div>
-                <div class="mb-3">
-                    <span class="d-block fw-semibold">JS</span>
-                    <div class="progress">
-                        <div class="progress-bar bg-info" style="width: 75%">75%</div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="stat-item">
+                        <h3 class="display-4 fw-bold text-primary counter" data-target="100">0</h3>
+                        <p class="lead">% Satisfação</p>
                     </div>
                 </div>
-                <div class="mb-3">
-                    <span class="d-block fw-semibold">Figma</span>
-                    <div class="progress">
-                        <div class="progress-bar bg-danger" style="width: 70%">70%</div>
+            </div>
+
+            <!-- Tecnologias que Usamos -->
+            <div class="row">
+                <div class="col-12">
+                    <h4 class="text-center mb-4 fade-in">Tecnologias que Dominamos</h4>
+                    <div class="row g-4">
+                        <div class="col-lg-2 col-md-4 col-6">
+                            <div class="tech-item fade-in">
+                                <i class="fab fa-js-square"></i>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-6">
+                            <div class="tech-item fade-in">
+                                <i class="fab fa-react"></i>
+                                <span>React</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-6">
+                            <div class="tech-item fade-in">
+                                <i class="fab fa-node-js"></i>
+                                <span>Node.js</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-6">
+                            <div class="tech-item fade-in">
+                                <i class="fab fa-python"></i>
+                                <span>Python</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-6">
+                            <div class="tech-item fade-in">
+                                <i class="fas fa-database"></i>
+                                <span>MongoDB</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-6">
+                            <div class="tech-item fade-in">
+                                <i class="fab fa-figma"></i>
+                                <span>Figma</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-
+    </section>
 
     <!-- ==================== PROJETOS ==================== -->
     <section id="projetos" class="section">
         <div class="container">
-            <h2 class="section-title fade-in">Meus Projetos</h2>
+            <h2 class="section-title fade-in">Nossos Projetos</h2>
             <div class="row g-4">
+                <!-- Projeto 1 -->
                 <div class="col-lg-4 col-md-6">
                     <div class="project-card fade-in h-100">
                         <div class="project-image">
@@ -169,24 +207,24 @@
                         </div>
                     </div>
                 </div>
-                
+
+                <!-- Projeto 2 -->
                 <div class="col-lg-4 col-md-6">
                     <div class="project-card fade-in h-100">
                         <div class="project-image">
                             <div class="project-overlay">
-                                <i class="fas fa-tasks"></i>
+                                <i class="fas fa-mobile-alt"></i>
                             </div>
                         </div>
                         <div class="project-content">
-                            <h5 class="fw-semibold mb-3">Task Management App</h5>
+                            <h5 class="fw-semibold mb-3">App de Delivery</h5>
                             <p class="text-muted mb-3">
-                                Aplicação de gerenciamento de tarefas com funcionalidades de colaboração em tempo real e notificações.
+                                Aplicativo mobile para delivery de comida com rastreamento em tempo real e pagamento integrado.
                             </p>
                             <div class="tech-tags mb-4">
-                                <span class="badge bg-light text-dark">Vue.js</span>
-                                <span class="badge bg-light text-dark">Socket.io</span>
-                                <span class="badge bg-light text-dark">Express</span>
-                                <span class="badge bg-light text-dark">PostgreSQL</span>
+                                <span class="badge bg-light text-dark">React Native</span>
+                                <span class="badge bg-light text-dark">Firebase</span>
+                                <span class="badge bg-light text-dark">Maps API</span>
                             </div>
                             <div class="d-flex gap-2">
                                 <button class="btn btn-outline-primary btn-sm">
@@ -199,24 +237,25 @@
                         </div>
                     </div>
                 </div>
-                
+
+                <!-- Projeto 3 -->
                 <div class="col-lg-4 col-md-6">
                     <div class="project-card fade-in h-100">
                         <div class="project-image">
                             <div class="project-overlay">
-                                <i class="fas fa-cloud-sun"></i>
+                                <i class="fas fa-chart-bar"></i>
                             </div>
                         </div>
                         <div class="project-content">
-                            <h5 class="fw-semibold mb-3">Weather Dashboard</h5>
+                            <h5 class="fw-semibold mb-3">Dashboard Analytics</h5>
                             <p class="text-muted mb-3">
-                                Dashboard interativo de previsão do tempo com mapas, gráficos e alertas meteorológicos personalizados.
+                                Sistema de análise de dados com dashboards interativos e relatórios personalizados para empresas.
                             </p>
                             <div class="tech-tags mb-4">
-                                <span class="badge bg-light text-dark">Angular</span>
-                                <span class="badge bg-light text-dark">Chart.js</span>
-                                <span class="badge bg-light text-dark">Weather API</span>
-                                <span class="badge bg-light text-dark">PWA</span>
+                                <span class="badge bg-light text-dark">Vue.js</span>
+                                <span class="badge bg-light text-dark">D3.js</span>
+                                <span class="badge bg-light text-dark">Python</span>
+                                <span class="badge bg-light text-dark">PostgreSQL</span>
                             </div>
                             <div class="d-flex gap-2">
                                 <button class="btn btn-outline-primary btn-sm">
@@ -236,102 +275,180 @@
     <!-- ==================== CONTATO ==================== -->
     <section id="contato" class="section bg-dark text-white">
         <div class="container">
-            <h2 class="section-title fade-in text-white">Entre em Contato</h2>
-            <div class="row g-5">
-                <div class="col-lg-6">
-                    <div class="contact-info fade-in">
-                        <h4 class="mb-4">Vamos Conversar!</h4>
-                        <p class="mb-5 text-light">
-                            Estou sempre interessado em novos projetos e oportunidades. Vamos criar algo incrível juntos!
-                        </p>
-                        
-                        <div class="contact-items">
-                            <div class="contact-item mb-4">
-                                <div class="contact-icon">
-                                    <i class="fas fa-envelope"></i>
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2 class="section-title text-white fade-in">Nossa Equipe & Contato</h2>
+                    <p class="section-subtitle fade-in">Conheça os desenvolvedores por trás da Equipe Yupi e entre em contato</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Coluna da Equipe -->
+                <div class="col-lg-8">
+                    <div class="row g-4">
+                        <!-- João Silva -->
+                        <div class="col-md-6">
+                            <div class="team-card fade-in h-100">
+                                <div class="team-avatar mb-3 text-center">
+                                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=face" 
+                                         alt="João Silva" class="rounded-circle shadow">
                                 </div>
-                                <div class="contact-details">
-                                    <h6 class="mb-1">Email</h6>
-                                    <p class="text-light mb-0">joao.silva@email.com</p>
-                                </div>
-                            </div>
-                            
-                            <div class="contact-item mb-4">
-                                <div class="contact-icon">
-                                    <i class="fas fa-phone"></i>
-                                </div>
-                                <div class="contact-details">
-                                    <h6 class="mb-1">Telefone</h6>
-                                    <p class="text-light mb-0">+55 (11) 99999-9999</p>
-                                </div>
-                            </div>
-                            
-                            <div class="contact-item mb-4">
-                                <div class="contact-icon">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                </div>
-                                <div class="contact-details">
-                                    <h6 class="mb-1">Localização</h6>
-                                    <p class="text-light mb-0">São Paulo, SP - Brasil</p>
+                                <div class="team-info text-center">
+                                    <h5>João Silva</h5>
+                                    <p class="text-light mb-3">Full Stack Developer</p>
+                                    <div class="team-skills mb-3">
+                                        <span class="badge bg-primary">React</span>
+                                        <span class="badge bg-success">Node.js</span>
+                                        <span class="badge bg-dark">MongoDB</span>
+                                    </div>
+                                    <button class="btn btn-outline-light btn-sm" onclick="openDeveloperModal('joao')">
+                                        <i class="fas fa-user-circle me-2"></i>Ver Perfil Completo
+                                    </button>
                                 </div>
                             </div>
                         </div>
-                        
-                        <div class="social-links mt-5">
-                            <a href="#" class="social-link me-3">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
-                            <a href="#" class="social-link me-3">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="#" class="social-link me-3">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                            <a href="#" class="social-link">
-                                <i class="fab fa-instagram"></i>
-                            </a>
+
+                        <!-- Maria Santos -->
+                        <div class="col-md-6">
+                            <div class="team-card fade-in h-100">
+                                <div class="team-avatar mb-3 text-center">
+                                    <img src="https://images.unsplash.com/photo-1494790108755-2616b9358ce9?w=200&h=200&fit=crop&crop=face" 
+                                         alt="Maria Santos" class="rounded-circle shadow">
+                                </div>
+                                <div class="team-info text-center">
+                                    <h5>Maria Santos</h5>
+                                    <p class="text-light mb-3">Frontend Specialist</p>
+                                    <div class="team-skills mb-3">
+                                        <span class="badge bg-info">Vue.js</span>
+                                        <span class="badge bg-warning">CSS3</span>
+                                        <span class="badge bg-danger">Figma</span>
+                                    </div>
+                                    <button class="btn btn-outline-light btn-sm" onclick="openDeveloperModal('maria')">
+                                        <i class="fas fa-user-circle me-2"></i>Ver Perfil Completo
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Carlos Oliveira -->
+                        <div class="col-md-6">
+                            <div class="team-card fade-in h-100">
+                                <div class="team-avatar mb-3 text-center">
+                                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&h=200&fit=crop&crop=face" 
+                                         alt="Carlos Oliveira" class="rounded-circle shadow">
+                                </div>
+                                <div class="team-info text-center">
+                                    <h5>Carlos Oliveira</h5>
+                                    <p class="text-light mb-3">Backend Engineer</p>
+                                    <div class="team-skills mb-3">
+                                        <span class="badge bg-secondary">Python</span>
+                                        <span class="badge bg-primary">PostgreSQL</span>
+                                        <span class="badge bg-dark">Docker</span>
+                                    </div>
+                                    <button class="btn btn-outline-light btn-sm" onclick="openDeveloperModal('carlos')">
+                                        <i class="fas fa-user-circle me-2"></i>Ver Perfil Completo
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Informações de contato geral -->
+                        <div class="col-md-6">
+                            <div class="contact-info-card fade-in h-100">
+                                <h5 class="mb-3">Entre em Contato</h5>
+                                <div class="contact-item mb-3">
+                                    <i class="fas fa-envelope me-3"></i>
+                                    <div>
+                                        <strong>Email:</strong><br>
+                                        contato@equipeyupi.com
+                                    </div>
+                                </div>
+                                <div class="contact-item mb-3">
+                                    <i class="fas fa-phone me-3"></i>
+                                    <div>
+                                        <strong>Telefone:</strong><br>
+                                        +55 (11) 99999-0000
+                                    </div>
+                                </div>
+                                <div class="contact-item mb-4">
+                                    <i class="fas fa-map-marker-alt me-3"></i>
+                                    <div>
+                                        <strong>Localização:</strong><br>
+                                        Tubarão, SC - Brasil
+                                    </div>
+                                </div>
+                                <div class="social-links">
+                                    <a href="#" class="social-link me-2">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="#" class="social-link me-2">
+                                        <i class="fab fa-linkedin"></i>
+                                    </a>
+                                    <a href="#" class="social-link">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                
-                <div class="col-lg-6">
-                    <form class="contact-form fade-in" id="contactForm">
-                        <div class="row g-3">
-                            <div class="col-md-6">
-                                <input type="text" class="form-control" placeholder="Seu Nome" required>
+
+                <!-- Coluna do Formulário -->
+                <div class="col-lg-4">
+                    <div class="contact-form-wrapper fade-in">
+                        <h4 class="mb-4">Envie uma Mensagem</h4>
+                        <form id="contactForm" class="contact-form">
+                            <div class="mb-3">
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Seu Nome" required>
                             </div>
-                            <div class="col-md-6">
-                                <input type="email" class="form-control" placeholder="Seu Email" required>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Seu Email" required>
                             </div>
-                            <div class="col-12">
-                                <input type="text" class="form-control" placeholder="Assunto">
+                            <div class="mb-3">
+                                <input type="text" class="form-control" id="subject" name="subject" placeholder="Assunto" required>
                             </div>
-                            <div class="col-12">
-                                <textarea class="form-control" rows="6" placeholder="Sua Mensagem" required></textarea>
+                            <div class="mb-4">
+                                <textarea class="form-control" id="message" name="message" rows="5" placeholder="Sua Mensagem" required></textarea>
                             </div>
-                            <div class="col-12">
-                                <button type="submit" class="btn btn-primary btn-lg w-100">
-                                    <i class="fas fa-paper-plane me-2"></i>Enviar Mensagem
-                                </button>
-                            </div>
-                        </div>
-                    </form>
+                            <button type="submit" class="btn btn-primary w-100">
+                                <i class="fas fa-paper-plane me-2"></i>Enviar Mensagem
+                            </button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- ==================== MODAL DESENVOLVEDORES ==================== -->
+    <div class="modal fade" id="developerModal" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitle">Perfil do Desenvolvedor</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body" id="modalBody">
+                    <!-- Conteúdo será preenchido dinamicamente -->
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- ==================== FOOTER ==================== -->
     <footer class="footer py-4">
         <div class="container text-center">
-            <p class="mb-2">&copy; 2025 João Silva. Todos os direitos reservados.</p>
-            <p class="text-muted small">Desenvolvido com <i class="fas fa-heart text-danger"></i> e muito ☕</p>
+            <p class="mb-2">&copy; 2025 Equipe Yupi. Todos os direitos reservados.</p>
+            <p class="small text-muted">Desenvolvido com <i class="fas fa-heart text-danger"></i> pela Equipe Yupi</p>
         </div>
     </footer>
+
+    <!-- Notification Container -->
+    <div id="notificationContainer"></div>
 
     <!-- Bootstrap JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     <!-- JavaScript Personalizado -->
-    <script src="script.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 </html>
