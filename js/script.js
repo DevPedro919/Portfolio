@@ -4,44 +4,43 @@ let countersAnimated = false;
 
 // Dados dos desenvolvedores
 const developers = {
-    joao: {
-        name: "João Silva",
-        role: "Full Stack Developer",
-        image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face",
-        bio: "Especialista em desenvolvimento full-stack com mais de 3 anos de experiência. Apaixonado por criar soluções escaláveis e eficientes usando as mais modernas tecnologias web.",
-        skills: ["React", "Node.js", "MongoDB", "TypeScript", "Express", "GraphQL"],
-        email: "joao.silva@equipeyupi.com",
-        phone: "+55 (48) 99876-5432",
+    Gustavo: {
+        name: "Gustavo das Neves",
+        role: "Desenvolvedor Back - End",
+        image: "../img/Gustavo.jpeg",
+        bio: "Desenvolvedor Back - End cursando o 4 semestre de Desenvolvimento de Sistema na instituição de ensino Senai.",
+        skills: ["Java", "MySql", "Insomnia", "CSS", "Figma", "Git Hub"],
+        email: "nevesgustavo2020@gmail.com",
+        phone: "+55 (48) 99860-3554",
         linkedin: "https://linkedin.com/in/joaosilva",
         github: "https://github.com/joaosilva",
-        experience: "3 anos",
-        projects: 25
+        experience: "A procura da primeira oportunidade",
+        projects: 10
     },
     maria: {
         name: "Maria Santos",
         role: "Frontend Specialist & UI/UX Designer",
         image: "https://images.unsplash.com/photo-1494790108755-2616b9358ce9?w=300&h=300&fit=crop&crop=face",
-        bio: "Designer e desenvolvedora frontend especializada em criar interfaces intuitivas e experiências de usuário excepcionais. Combina design thinking com código limpo.",
-        skills: ["Vue.js", "CSS3", "Figma", "Adobe XD", "Sass", "JavaScript"],
-        email: "maria.santos@equipeyupi.com",
+        bio: "Desenvolvedor Front - End cursando o 4 semestre de Desenvolvimento de Sistema na instituição de ensino Senai.",
+        skills: ["CSS", "JS", "Figma", "Git Hub"],
+        email: "lucas.silveira.bp@gmail.com",
         phone: "+55 (48) 99765-4321",
         linkedin: "https://linkedin.com/in/mariasantos",
         github: "https://github.com/mariasantos",
-        experience: "2.5 anos",
-        projects: 30
+        experience: "A procura da primeira oportunidade",
+        projects: 10
     },
-    carlos: {
-        name: "Carlos Oliveira",
-        role: "Backend Engineer & DevOps",
-        image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop&crop=face",
-        bio: "Engenheiro backend com expertise em arquitetura de sistemas, microserviços e DevOps. Especialista em otimização de performance e escalabilidade.",
-        skills: ["Python", "PostgreSQL", "Docker", "AWS", "Kubernetes", "Redis"],
-        email: "carlos.oliveira@equipeyupi.com",
-        phone: "+55 (48) 99654-3210",
-        linkedin: "https://linkedin.com/in/carlosoliveira",
-        github: "https://github.com/carlosoliveira",
-        experience: "4 anos",
-        projects: 20
+    lucas: {
+        name: "Lucas Silveira",
+        role: "Desenvolvedor Front - End",
+        image: "../img/Silveira.jpeg",
+        bio: "Desenvolvedor Front - End cursando o 4 semestre de Desenvolvimento de Sistema na instituição de ensino Senai.",
+        email: "lucas.silveira.bp@gmail.com",
+        phone: "+55 (48) 9610-6798",
+        linkedin: "https://www.linkedin.com/in/lucas-silveira-88313a34b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        github: "https://github.com/lucas-silveira2",
+        experience: "A procura da primeira oportunidade",
+        projects: 10
     }
 };
 
@@ -744,4 +743,4 @@ document.addEventListener('click', function(e) {
     }
 });
 
-console.log('🚀 Equipe Yupi Portfolio carregado com sucesso!');
+
