@@ -55,6 +55,7 @@ function initializeApp() {
     setupScrollEffects();
     setupSmoothScroll();
     setupTypingAnimation();
+    setupThemeToggle();
 }
 
 // ==================== NAVEGAÇÃO ====================
@@ -620,6 +621,77 @@ confettiStyle.textContent = `
     }
 `;
 document.head.appendChild(confettiStyle);
+
+// ==================== SISTEMA DE TEMA ====================
+function setupThemeToggle() {
+    // Verificar preferência salva
+    const savedTheme = localStorage.getItem('theme');
+    const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    // Aplicar tema inicial
+    const initialTheme = savedTheme || (systemPrefersDark ? 'dark' : 'light');
+    applyTheme(initialTheme);
+
+    // Configurar botão de toggle
+    const themeToggleBtn = document.getElementById('themeToggle');
+    if (themeToggleBtn) {
+        // Definir ícone inicial
+        updateThemeIcon(initialTheme);
+
+        themeToggleBtn.addEventListener('click', function() {
+            const currentTheme = document.body.classList.contains('dark-theme') ? 'dark' : 'light';
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            applyTheme(newTheme);
+            updateThemeIcon(newTheme);
+            saveTheme(newTheme);
+
+            // Mostrar notificação
+            showNotification(
+                `Tema alterado para ${newTheme === 'dark' ? 'escuro' : 'claro'}`,
+                'info',
+                2000
+            );
+        });
+    }
+
+    // Ouvir mudanças na preferência do sistema
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function(e) {
+        // Só aplicar se o usuário não tiver uma preferência manual salva
+        if (!localStorage.getItem('theme')) {
+            const newTheme = e.matches ? 'dark' : 'light';
+            applyTheme(newTheme);
+            updateThemeIcon(newTheme);
+        }
+    });
+}
+
+function applyTheme(theme) {
+    // Remover todas as classes de tema
+    document.body.classList.remove('dark-theme', 'light-theme');
+
+    // Adicionar a classe do tema atual
+    document.body.classList.add(`${theme}-theme`);
+
+    // Atualizar meta tag de cor do tema para mobile
+    const metaThemeColor = document.querySelector('meta[name="theme-color"]');
+    if (metaThemeColor) {
+        metaThemeColor.setAttribute('content', theme === 'dark' ? '#1a1a1a' : '#ffffff');
+    }
+}
+
+function updateThemeIcon(theme) {
+    const themeToggleBtn = document.getElementById('themeToggle');
+    if (themeToggleBtn) {
+        const icon = themeToggleBtn.querySelector('i');
+        if (icon) {
+            icon.className = theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+        }
+    }
+}
+
+function saveTheme(theme) {
+    localStorage.setItem('theme', theme);
+}
 
 // ==================== UTILITÁRIOS ====================
 function debounce(func, wait) {
