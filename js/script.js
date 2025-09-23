@@ -16,24 +16,25 @@ const developers = {
         experience: "A procura da primeira oportunidade",
         projects: 10
     },
-    maria: {
-        name: "Maria Santos",
-        role: "Frontend Specialist & UI/UX Designer",
-        image: "https://images.unsplash.com/photo-1494790108755-2616b9358ce9?w=300&h=300&fit=crop&crop=face",
-        bio: "Desenvolvedor Front - End cursando o 4 semestre de Desenvolvimento de Sistema na instituição de ensino Senai.",
-        skills: ["CSS", "JS", "Figma", "Git Hub"],
-        email: "lucas.silveira.bp@gmail.com",
-        phone: "+55 (48) 99765-4321",
-        linkedin: "https://linkedin.com/in/mariasantos",
-        github: "https://github.com/mariasantos",
+    pedro: {
+        name: "Pedro Henrique Cucker Santana",
+        role: "Desenvolvedor Back - End",
+        image: "../img/Pedro.jpeg",
+        bio: "Desenvolvedor Back - End cursando o 4 semestre de Desenvolvimento de Sistema na instituição de ensino Senai.",
+        skills: ["Java", "PostgreeSQL", "Spring", "Git Hub"],
+        email: "santanapedro0105@gmail.com",
+        phone: "+55 (48) 99673-1277",
+        linkedin: "https://www.linkedin.com/in/pedro-henrique-cucker-santana-9720b4351/",
+        github: "https://github.com/DevPedro919",
         experience: "A procura da primeira oportunidade",
-        projects: 10
+        projects: 15
     },
     lucas: {
         name: "Lucas Silveira",
         role: "Desenvolvedor Front - End",
         image: "../img/Silveira.jpeg",
         bio: "Desenvolvedor Front - End cursando o 4 semestre de Desenvolvimento de Sistema na instituição de ensino Senai.",
+        skills: ["CSS", "JS", "Figma"],
         email: "lucas.silveira.bp@gmail.com",
         phone: "+55 (48) 9610-6798",
         linkedin: "https://www.linkedin.com/in/lucas-silveira-88313a34b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
