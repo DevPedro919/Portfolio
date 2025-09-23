@@ -1,4 +1,3 @@
-// ==================== VARIÁVEIS GLOBAIS ====================
 let isScrolling = false;
 let countersAnimated = false;
 
