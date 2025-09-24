@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto 1 - Robo de Corrida</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- CSS Global -->
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <!-- HEADER -->
+  <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="../html/index.html">
+        <i class="fas fa-code"></i> Equipe Yupi
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="../html/index.html">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="../html/index.html#sobre">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link active" href="../html/index.html#projetos">Projetos</a></li>
+          <li class="nav-item"><a class="nav-link" href="../html/index.html#contato">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- CONTEÚDO -->
+  <section class="section">
+    <div class="container">
+      <h1 class="section-title fade-in">Projeto 1 - Robo de Corrida</h1>
+      <p class="lead text-center fade-in">
+        Robo autônomo com sensores ultrassônicos e de linha, programado em C++ e Arduino,
+        criado para corridas em pistas de velocidade e precisão.
+      </p>
+
+      <div class="row g-4 mt-5">
+        <div class="col-lg-6 fade-in">
+          <img src="../img/projeto1.jpg" alt="Robo de Corrida" class="img-fluid rounded shadow">
+        </div>
+        <div class="col-lg-6 fade-in">
+          <video class="w-100 rounded shadow" controls>
+            <source src="../videos/projeto1.mp4" type="video/mp4">
+            Seu navegador não suporta vídeos.
+          </video>
+        </div>
+      </div>
+
+      <div class="row mt-5">
+        <div class="col-md-6 fade-in">
+          <h3 class="fw-bold mb-3">Detalhes Técnicos</h3>
+          <ul class="list-group">
+            <li class="list-group-item"><strong>Linguagem:</strong> C++</li>
+            <li class="list-group-item"><strong>Sensores:</strong> Ultrassônico e Linha</li>
+            <li class="list-group-item"><strong>Plataforma:</strong> Arduino</li>
+            <li class="list-group-item"><strong>Tempo de Desenvolvimento:</strong> 2 meses</li>
+          </ul>
+        </div>
+        <div class="col-md-6 fade-in">
+          <h3 class="fw-bold mb-3">Recursos</h3>
+          <p>
+            Focado em competições de corrida, o robo combina precisão de desvio
+            de obstáculos e velocidade em pista reta.
+          </p>
+          <a href="https://github.com/seu-repo" target="_blank" class="btn btn-primary">
+            <i class="fab fa-github me-2"></i> Ver Código
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container text-center">
+      <p>© 2025 Equipe Yupi | Feito com <span class="text-danger">❤</span> tecnologia</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/script.js"></script>
+</body>
+</html>
