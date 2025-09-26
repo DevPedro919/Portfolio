@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ffffff">
     <title>Equipe Yupi - desenvolvedores Full Stack</title>
      
     <!-- Bootstrap CSS -->
@@ -14,22 +15,25 @@
     <!-- CSS Personalizado -->
     <link rel="stylesheet" href="../css/style.css">
 </head>
-<body>
+<body class="light-theme">
+    <!-- Skip to content para acessibilidade -->
+    <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+
     <!-- ==================== NAVEGAÇÃO ==================== -->
-    <nav class="navbar navbar-expand-lg navbar-custom fixed-top" id="navbar">
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top" id="navbar" role="navigation" aria-label="Navegação principal">
         <div class="container">
-            <a class="navbar-brand" href="#home">
-                <i class="fas fa-code"></i> Equipe Yupi
+            <a class="navbar-brand" href="#home" aria-label="Equipe Yupi - Ir para o início">
+                <i class="fas fa-code" aria-hidden="true"></i> Equipe Yupi
             </a>
             
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir menu de navegação">
                 <span class="navbar-toggler-icon"></span>
             </button>
             
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#home">Início</a>
+                        <a class="nav-link active" href="#home" aria-current="page">Início</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#sobre">Sobre</a>
@@ -42,8 +46,8 @@
                     </li>
                     <!-- Theme Toggle -->
                     <li class="nav-item">
-                        <button class="btn theme-toggle" id="themeToggle" aria-label="Alternar tema">
-                            <i class="fas fa-moon"></i>
+                        <button class="btn theme-toggle" id="themeToggle" aria-label="Alternar entre tema claro e escuro">
+                            <i class="fas fa-moon" aria-hidden="true"></i>
                         </button>
                     </li>
                 </ul>
@@ -51,349 +55,356 @@
         </div>
     </nav>
 
-    <!-- ==================== HERO SECTION ==================== -->
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="row align-items-center min-vh-100">
-                <div class="col-lg-6">
-                    <div class="hero-content">
-                        <h1 class="display-4 fw-bold mb-4">
-                            Olá, nós somos <br>
-                            <span class="text-primary typing-text">a equipe Yupi</span>
-                        </h1>
-                        <p class="lead mb-4">
-                            Desenvolvedores Full Stack especializados em criar soluções digitais elegantes e funcionais para web.
+    <main id="main-content">
+        <!-- ==================== HERO SECTION ==================== -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="row align-items-center min-vh-100">
+                    <div class="col-lg-6">
+                        <div class="hero-content">
+                            <h1 class="display-4 fw-bold mb-4">
+                                Olá, nós somos <br>
+                                <span class="text-primary typing-text">a equipe Yupi</span>
+                            </h1>
+                            <p class="lead mb-4">
+                                Desenvolvedores Full Stack especializados em criar soluções digitais elegantes e funcionais para web.
+                            </p>
+                            <div class="d-flex gap-3 flex-wrap">
+                                <button class="btn btn-primary btn-lg" onclick="scrollToSection('projetos')" aria-label="Ver nossos projetos">
+                                    <i class="fas fa-folder-open me-2" aria-hidden="true"></i>Ver Projetos
+                                </button>
+                                <button class="btn btn-outline-secondary btn-lg" onclick="scrollToSection('contato')" aria-label="Entrar em contato conosco">
+                                    <i class="fas fa-envelope me-2" aria-hidden="true"></i>Contato
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="hero-image text-center">
+                            <div class="image-wrapper">
+                                <div class="profile-placeholder">
+                                    <i class="fas fa-users" aria-hidden="true"></i>
+                                    <p>Equipe Yupi</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== SOBRE ==================== -->
+        <section id="sobre" class="section bg-light">
+            <div class="container">
+                <h2 class="section-title fade-in">Sobre Nossa Equipe</h2>
+                
+                <!-- Descrição da Equipe -->
+                <div class="row mb-5">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <p class="lead fade-in">
+                            Somos uma equipe apaixonada de desenvolvedores Full Stack dedicados a criar soluções digitais inovadoras. 
+                            Combinamos expertise técnica com criatividade para entregar projetos que superam expectativas.
                         </p>
-                        <div class="d-flex gap-3 flex-wrap">
-                            <button class="btn btn-primary btn-lg" onclick="scrollToSection('projetos')">
-                                <i class="fas fa-folder-open me-2"></i>Ver Projetos
-                            </button>
-                            <button class="btn btn-outline-secondary btn-lg" onclick="scrollToSection('contato')">
-                                <i class="fas fa-envelope me-2"></i>Contato
-                            </button>
-                        </div>
                     </div>
                 </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- ==================== SOBRE ==================== -->
-    <section id="sobre" class="section bg-light">
-        <div class="container">
-            <h2 class="section-title fade-in">Sobre Nossa Equipe</h2>
-            
-            <!-- Descrição da Equipe -->
-            <div class="row mb-5">
-                <div class="col-lg-8 mx-auto text-center">
-                    <p class="lead fade-in">
-                        Somos uma equipe apaixonada de desenvolvedores Full Stack dedicados a criar soluções digitais inovadoras. 
-                        Combinamos expertise técnica com criatividade para entregar projetos que superam expectativas.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Estatísticas da Equipe -->
-            <div class="row text-center mb-5 stats-row fade-in">
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="stat-item">
-                        <h3 class="display-4 fw-bold text-primary counter" data-target="25">0</h3>
-                        <p class="lead">Projetos Concluídos</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="stat-item">
-                        <h3 class="display-4 fw-bold text-primary counter" data-target="3">0</h3>
-                        <p class="lead">Desenvolvedores</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="stat-item">
-                        <h3 class="display-4 fw-bold text-primary counter" data-target="0">0</h3>
-                        <p class="lead">Anos de Experiência</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="stat-item">
-                        <h3 class="display-4 fw-bold text-primary counter" data-target="100">0</h3>
-                        <p class="lead">% Satisfação</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Tecnologias que Usamos -->
-            <div class="row">
-                <div class="col-12">
-                    <h4 class="text-center mb-4 fade-in">Tecnologias que Dominamos</h4>
-                    <div class="row g-4">
-                        <div class="col-lg-2 col-md-4 col-6">
-                            <div class="tech-item fade-in">
-                                <i class="fab fa-java"></i>
-                                <span>Java</span>
-                            </div>
-                        </div>
-                        <div class="col-lg-2 col-md-4 col-6">
-                            <div class="tech-item fade-in">
-                                <i class="fab fa-js-square"></i>
-                                <span>JavaScript</span>
-                            </div>
-                        </div>
-                        <div class="col-lg-2 col-md-4 col-6">
-                            <div class="tech-item fade-in">
-                                <i class="fab fa-css3-alt"></i>
-                                <span>CSS</span>
-                            </div>
-                        </div>
-                        <div class="col-lg-2 col-md-4 col-6">
-                            <div class="tech-item fade-in">
-                                <i class="fab fa-python"></i>
-                                <span>Python</span>
-                            </div>
-                        </div>
-                        <div class="col-lg-2 col-md-4 col-6">
-                            <div class="tech-item fade-in">
-                                <i class="fas fa-database"></i>
-                                <span>MongoDB</span>
-                            </div>
-                        </div>
-                        <div class="col-lg-2 col-md-4 col-6">
-                            <div class="tech-item fade-in">
-                                <i class="fab fa-figma"></i>
-                                <span>Figma</span>
-                            </div>
+                <!-- Estatísticas da Equipe -->
+                <div class="row text-center mb-5 stats-row fade-in">
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="stat-item">
+                            <h3 class="display-4 fw-bold text-primary counter" data-target="25" aria-label="25 projetos concluídos">0</h3>
+                            <p class="lead">Projetos Concluídos</p>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ==================== PROJETOS ==================== -->
-    <section id="projetos" class="section">
-        <div class="container">
-            <h2 class="section-title fade-in">Nossos Projetos</h2>
-            <div class="row g-4">
-                <!-- Projeto 1 -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="project-card fade-in h-100">
-                        <div class="project-image">
-                            <div class="project-overlay">
-                                <i class="fas fa-shopping-cart"></i>
-                            </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="stat-item">
+                            <h3 class="display-4 fw-bold text-primary counter" data-target="3" aria-label="3 desenvolvedores na equipe">0</h3>
+                            <p class="lead">Desenvolvedores</p>
                         </div>
-                        <div class="project-content">
-                            <h5 class="fw-semibold mb-3">Robo de Corrida</h5>
-                            <p class="text-muted mb-3">
-                                Robo completo com sensor ultrassônico, sensor de linha, com codigo em C++
-                            </p>
-                            <div class="tech-tags mb-4">
-                                <span class="badge bg-light text-dark">C++</span>
-                            </div>
-                            <a href="Projeto1.html" class="btn btn-primary">Ver Projeto</a>
-                            <div class="d-flex gap-2">
-     
-                            </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="stat-item">
+                            <h3 class="display-4 fw-bold text-primary counter" data-target="1" aria-label="1 ano de experiência">0</h3>
+                            <p class="lead">Anos de Experiência</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="stat-item">
+                            <h3 class="display-4 fw-bold text-primary counter" data-target="100" aria-label="100% de satisfação">0</h3>
+                            <p class="lead">% Satisfação</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- Projeto 2 -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="project-card fade-in h-100">
-                        <div class="project-image">
-                            <div class="project-overlay">
-                                <i class="fas fa-mobile-alt"></i>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h5 class="fw-semibold mb-3">Projeto Judo</h5>
-                            <p class="text-muted mb-3">
-                                Projeto de um sistema de pontuação para competições de Judo, desenvolvido em C++
-                            </p>
-                            <div class="tech-tags mb-4">
-                                <span class="badge bg-light text-dark">C++</span>
-                            </div>
-                            <div class="d-flex gap-2">
-                            </div>
-                            <a href="Projeto2.html" class="btn btn-primary">Ver Projeto</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Projeto 3 -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="project-card fade-in h-100">
-                        <div class="project-image">
-                            <div class="project-overlay">
-                                <i class="fas fa-chart-bar"></i>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h5 class="fw-semibold mb-3">Trabalho Pendente</h5>
-                            <p class="text-muted mb-3">
-                                Projeto em andamento, mais detalhes em breve.
-                            </p>
-                            <div class="tech-tags mb-4">
-                                <span class="badge bg-light text-dark"> C++</span>
-                            </div>
-                            <a href="Projeto3.html" class="btn btn-primary">Ver Projeto</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ==================== CONTATO ==================== -->
-    <section id="contato" class="section bg-dark text-white">
-        <div class="container">
-            <div class="row mb-5">
-                <div class="col-12 text-center">
-                    <h2 class="section-title text-white fade-in">Nossa Equipe & Contato</h2>
-                    <p class="section-subtitle fade-in">Conheça os desenvolvedores por trás da Equipe Yupi e entre em contato</p>
-                </div>
-            </div>
-
-            <div class="row">
-                <!-- Coluna da Equipe -->
-                <div class="col-lg-8">
-                    <div class="row g-4">
-                        <!-- João Silva -->
-                        <div class="col-md-6">
-                            <div class="team-card fade-in h-100">
-                                <div class="team-avatar mb-3 text-center">
-                                    <img src="../img/Gustavo.jpeg" 
-                                         alt="Gustavo" class="rounded-circle shadow">
+                <!-- Tecnologias que Usamos -->
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="text-center mb-4 fade-in">Tecnologias que Dominamos</h3>
+                        <div class="row g-4">
+                            <div class="col-lg-2 col-md-4 col-6">
+                                <div class="tech-item fade-in">
+                                    <i class="fab fa-java" aria-hidden="true"></i>
+                                    <span>Java</span>
                                 </div>
-                                <div class="team-info text-center">
-                                    <h5>Gustavo das Neves</h5>
-                                    <p class="text-light mb-3">Desenvolvedor Back - End</p>
-                                    <div class="team-skills mb-3">
-                                        <span class="badge bg-primary">Java</span>
-                                        <span class="badge bg-success">MySql</span>
-                                        <span class="badge bg-dark">Insomnia</span>
+                            </div>
+                            <div class="col-lg-2 col-md-4 col-6">
+                                <div class="tech-item fade-in">
+                                    <i class="fab fa-js-square" aria-hidden="true"></i>
+                                    <span>JavaScript</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-4 col-6">
+                                <div class="tech-item fade-in">
+                                    <i class="fab fa-css3-alt" aria-hidden="true"></i>
+                                    <span>CSS</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-4 col-6">
+                                <div class="tech-item fade-in">
+                                    <i class="fab fa-python" aria-hidden="true"></i>
+                                    <span>Python</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-4 col-6">
+                                <div class="tech-item fade-in">
+                                    <i class="fas fa-database" aria-hidden="true"></i>
+                                    <span>MongoDB</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-4 col-6">
+                                <div class="tech-item fade-in">
+                                    <i class="fab fa-figma" aria-hidden="true"></i>
+                                    <span>Figma</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== PROJETOS ==================== -->
+        <section id="projetos" class="section">
+            <div class="container">
+                <h2 class="section-title fade-in">Nossos Projetos</h2>
+                <div class="row g-4">
+                    <!-- Projeto 1 -->
+                    <div class="col-lg-4 col-md-6">
+                        <article class="project-card fade-in h-100">
+                            <div class="project-image" role="img" aria-label="Imagem do projeto Robo de Corrida">
+                                <div class="project-overlay">
+                                    <i class="fas fa-robot" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <h3 class="fw-semibold mb-3">Robo de Corrida</h3>
+                                <p class="text-muted mb-3">
+                                    Robo completo com sensor ultrassônico, sensor de linha, com codigo em C++
+                                </p>
+                                <div class="tech-tags mb-4" role="list" aria-label="Tecnologias utilizadas">
+                                    <span class="badge bg-light text-dark" role="listitem">C++</span>
+                                </div>
+                                <a href="Projeto1.html" class="btn btn-primary" aria-label="Ver detalhes do projeto Robo de Corrida">Ver Projeto</a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Projeto 2 -->
+                    <div class="col-lg-4 col-md-6">
+                        <article class="project-card fade-in h-100">
+                            <div class="project-image" role="img" aria-label="Imagem do projeto Sistema de Pontuação para Judo">
+                                <div class="project-overlay">
+                                    <i class="fas fa-trophy" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <h3 class="fw-semibold mb-3">Sistema de Pontuação - Judo</h3>
+                                <p class="text-muted mb-3">
+                                    Sistema de pontuação para competições de Judo, desenvolvido em C++
+                                </p>
+                                <div class="tech-tags mb-4" role="list" aria-label="Tecnologias utilizadas">
+                                    <span class="badge bg-light text-dark" role="listitem">C++</span>
+                                </div>
+                                <a href="Projeto2.html" class="btn btn-primary" aria-label="Ver detalhes do projeto Sistema de Pontuação">Ver Projeto</a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Projeto 3 -->
+                    <div class="col-lg-4 col-md-6">
+                        <article class="project-card fade-in h-100">
+                            <div class="project-image" role="img" aria-label="Imagem do projeto em desenvolvimento">
+                                <div class="project-overlay">
+                                    <i class="fas fa-cog" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <h3 class="fw-semibold mb-3">Projeto em Desenvolvimento</h3>
+                                <p class="text-muted mb-3">
+                                    Projeto em andamento, mais detalhes em breve.
+                                </p>
+                                <div class="tech-tags mb-4" role="list" aria-label="Tecnologias utilizadas">
+                                    <span class="badge bg-light text-dark" role="listitem">C++</span>
+                                </div>
+                                <a href="Projeto3.html" class="btn btn-primary" aria-label="Ver detalhes do projeto em desenvolvimento">Ver Projeto</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== CONTATO ==================== -->
+        <section id="contato" class="section bg-dark text-white">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-12 text-center">
+                        <h2 class="section-title text-white fade-in">Nossa Equipe & Contato</h2>
+                        <p class="section-subtitle fade-in">Conheça os desenvolvedores por trás da Equipe Yupi e entre em contato</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <!-- Coluna da Equipe -->
+                    <div class="col-lg-8">
+                        <div class="row g-4">
+                            <!-- Gustavo das Neves -->
+                            <div class="col-md-6">
+                                <article class="team-card fade-in h-100">
+                                    <div class="team-avatar mb-3 text-center">
+                                        <img src="../img/Gustavo.jpeg" 
+                                             alt="Foto de Gustavo das Neves" class="rounded-circle shadow">
                                     </div>
-                                    <button class="btn btn-outline-light btn-sm" onclick="openDeveloperModal('Gustavo')">
-                                        <i class="fas fa-user-circle me-2"></i>Ver Perfil Completo
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Lucas Silveira -->
-                        <div class="col-md-6">
-                            <div class="team-card fade-in h-100">
-                                <div class="team-avatar mb-3 text-center">
-                                    <img src="../img/Silveira.jpeg"
-                                         alt="Lucas Silveira" class="rounded-circle shadow">
-                                </div>
-                                <div class="team-info text-center">
-                                    <h5>Lucas Silveira</h5>
-                                    <p class="text-light mb-3">Desenvolvedor Front-end</p>
-                                    <div class="team-skills mb-3">
-                                        <span class="badge bg-info">JavaScript</span>
-                                        <span class="badge bg-warning">CSS3</span>
-                                        <span class="badge bg-danger">Figma</span>
-                                        <span class="badge bg-success">MySQL</span>
+                                    <div class="team-info text-center">
+                                        <h3>Gustavo das Neves</h3>
+                                        <p class="text-light mb-3">Desenvolvedor Back-End</p>
+                                        <div class="team-skills mb-3" role="list" aria-label="Habilidades de Gustavo">
+                                            <span class="badge bg-primary" role="listitem">Java</span>
+                                            <span class="badge bg-success" role="listitem">MySQL</span>
+                                            <span class="badge bg-dark" role="listitem">Insomnia</span>
+                                        </div>
+                                        <button class="btn btn-outline-light btn-sm" onclick="openDeveloperModal('gustavo')" aria-label="Ver perfil completo de Gustavo das Neves">
+                                            <i class="fas fa-user-circle me-2" aria-hidden="true"></i>Ver Perfil Completo
+                                        </button>
                                     </div>
-                                    <button class="btn btn-outline-light btn-sm" onclick="openDeveloperModal('lucas')">
-                                        <i class="fas fa-user-circle me-2"></i>Ver Perfil Completo
-                                    </button>
-                                </div>
+                                </article>
                             </div>
-                        </div>
 
-                        <!-- Carlos Oliveira -->
-                        <div class="col-md-6">
-                            <div class="team-card fade-in h-100">
-                                <div class="team-avatar mb-3 text-center">
-                                    <img src="../img/Pedro.jpeg" 
-                                         alt="Pedro Cucker" class="rounded-circle shadow">
-                                </div>
-                                <div class="team-info text-center">
-                                    <h5>Pedro Cucker</h5>
-                                    <p class="text-light mb-3">Desenvolvedor Back - End</p>
-                                    <div class="team-skills mb-3">
-                                        <span class="badge bg-secondary">Java</span>
-                                        <span class="badge bg-primary">PostgreSQL</span>
-                                        <span class="badge bg-dark">Spring</span>
+                            <!-- Lucas Silveira -->
+                            <div class="col-md-6">
+                                <article class="team-card fade-in h-100">
+                                    <div class="team-avatar mb-3 text-center">
+                                        <img src="../img/Silveira.jpeg"
+                                             alt="Foto de Lucas Silveira" class="rounded-circle shadow">
                                     </div>
-                                    <button class="btn btn-outline-light btn-sm" onclick="openDeveloperModal('pedro')">
-                                        <i class="fas fa-user-circle me-2"></i>Ver Perfil Completo
-                                    </button>
-                                </div>
+                                    <div class="team-info text-center">
+                                        <h3>Lucas Silveira</h3>
+                                        <p class="text-light mb-3">Desenvolvedor Front-End</p>
+                                        <div class="team-skills mb-3" role="list" aria-label="Habilidades de Lucas">
+                                            <span class="badge bg-info" role="listitem">JavaScript</span>
+                                            <span class="badge bg-warning" role="listitem">CSS3</span>
+                                            <span class="badge bg-danger" role="listitem">Figma</span>
+                                            <span class="badge bg-success" role="listitem">MySQL</span>
+                                        </div>
+                                        <button class="btn btn-outline-light btn-sm" onclick="openDeveloperModal('lucas')" aria-label="Ver perfil completo de Lucas Silveira">
+                                            <i class="fas fa-user-circle me-2" aria-hidden="true"></i>Ver Perfil Completo
+                                        </button>
+                                    </div>
+                                </article>
                             </div>
-                        </div>
 
-                        <!-- Informações de contato geral -->
-                        <div class="col-md-6">
-                            <div class="contact-info-card fade-in h-100">
-                                <h5 class="mb-3">Entre em Contato</h5>
-                                <div class="contact-item mb-3">
-                                    <i class="fas fa-envelope me-3"></i>
-                                    <div>
-                                        <strong>Email:</strong><br>
-                                        santanapedro0105@gmail.com  
+                            <!-- Pedro Cucker -->
+                            <div class="col-md-6">
+                                <article class="team-card fade-in h-100">
+                                    <div class="team-avatar mb-3 text-center">
+                                        <img src="../img/Pedro.jpeg" 
+                                             alt="Foto de Pedro Cucker" class="rounded-circle shadow">
+                                    </div>
+                                    <div class="team-info text-center">
+                                        <h3>Pedro Cucker</h3>
+                                        <p class="text-light mb-3">Desenvolvedor Back-End</p>
+                                        <div class="team-skills mb-3" role="list" aria-label="Habilidades de Pedro">
+                                            <span class="badge bg-secondary" role="listitem">Java</span>
+                                            <span class="badge bg-primary" role="listitem">PostgreSQL</span>
+                                            <span class="badge bg-dark" role="listitem">Spring</span>
+                                        </div>
+                                        <button class="btn btn-outline-light btn-sm" onclick="openDeveloperModal('pedro')" aria-label="Ver perfil completo de Pedro Cucker">
+                                            <i class="fas fa-user-circle me-2" aria-hidden="true"></i>Ver Perfil Completo
+                                        </button>
+                                    </div>
+                                </article>
+                            </div>
+
+                            <!-- Informações de contato geral -->
+                            <div class="col-md-6">
+                                <div class="contact-info-card fade-in h-100">
+                                    <h3 class="mb-3">Entre em Contato</h3>
+                                    <div class="contact-item mb-3">
+                                        <i class="fas fa-envelope me-3" aria-hidden="true"></i>
+                                        <div>
+                                            <strong>Email:</strong><br>
+                                            <a href="mailto:santanapedro0105@gmail.com" class="text-white">santanapedro0105@gmail.com</a>
+                                        </div>
+                                    </div>
+                                    <div class="contact-item mb-3">
+                                        <i class="fas fa-phone me-3" aria-hidden="true"></i>
+                                        <div>
+                                            <strong>Telefone:</strong><br>
+                                            <a href="tel:+5548996731277" class="text-white">+55 (48) 99673-1277</a>
+                                        </div>
+                                    </div>
+                                    <div class="contact-item mb-4">
+                                        <i class="fas fa-map-marker-alt me-3" aria-hidden="true"></i>
+                                        <div>
+                                            <strong>Localização:</strong><br>
+                                            Tubarão, SC - Brasil
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="contact-item mb-3">
-                                    <i class="fas fa-phone me-3"></i>
-                                    <div>
-                                        <strong>Telefone:</strong><br>
-                                        +55 (48) 99673 - 1277
-                                    </div>
-                                </div>
-                                <div class="contact-item mb-4">
-                                    <i class="fas fa-map-marker-alt me-3"></i>
-                                    <div>
-                                        <strong>Localização:</strong><br>
-                                        Tubarão, SC - Brasil
-                                    </div>
-                                </div>
-
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- Coluna do Formulário -->
-                <div class="col-lg-4">
-                    <div class="contact-form-wrapper fade-in">
-                        <h4 class="mb-4">Envie uma Mensagem</h4>
-                        <form id="contactForm" class="contact-form">
-                            <div class="mb-3">
-                                <input type="text" class="form-control" id="name" name="name" placeholder="Seu Nome" required>
-                            </div>
-                            <div class="mb-3">
-                                <input type="email" class="form-control" id="email" name="email" placeholder="Seu Email" required>
-                            </div>
-                            <div class="mb-3">
-                                <input type="text" class="form-control" id="subject" name="subject" placeholder="Assunto" required>
-                            </div>
-                            <div class="mb-4">
-                                <textarea class="form-control" id="message" name="message" rows="5" placeholder="Sua Mensagem" required></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary w-100">
-                                <i class="fas fa-paper-plane me-2"></i>Enviar Mensagem
-                            </button>
-                        </form>
+                    <!-- Coluna do Formulário -->
+                    <div class="col-lg-4">
+                        <div class="contact-form-wrapper fade-in">
+                            <h3 class="mb-4">Envie uma Mensagem</h3>
+                            <form id="contactForm" class="contact-form" novalidate>
+                                <div class="mb-3">
+                                    <label for="name" class="visually-hidden">Nome</label>
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Seu Nome" required aria-describedby="name-error">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="visually-hidden">Email</label>
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Seu Email" required aria-describedby="email-error">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="subject" class="visually-hidden">Assunto</label>
+                                    <input type="text" class="form-control" id="subject" name="subject" placeholder="Assunto" required aria-describedby="subject-error">
+                                </div>
+                                <div class="mb-4">
+                                    <label for="message" class="visually-hidden">Mensagem</label>
+                                    <textarea class="form-control" id="message" name="message" rows="5" placeholder="Sua Mensagem" required aria-describedby="message-error"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100" aria-describedby="form-status">
+                                    <i class="fas fa-paper-plane me-2" aria-hidden="true"></i>Enviar Mensagem
+                                </button>
+                                <div id="form-status" class="visually-hidden" aria-live="polite"></div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <!-- ==================== MODAL DESENVOLVEDORES ==================== -->
-    <div class="modal fade" id="developerModal" tabindex="-1">
+    <div class="modal fade" id="developerModal" tabindex="-1" aria-labelledby="modalTitle" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="modalTitle">Perfil do Desenvolvedor</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    <h2 class="modal-title" id="modalTitle">Perfil do Desenvolvedor</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar modal"></button>
                 </div>
                 <div class="modal-body" id="modalBody">
                     <!-- Conteúdo será preenchido dinamicamente -->
@@ -402,15 +413,15 @@
         </div>
     </div>
 
-    <footer class="footer py-4">
+    <footer class="footer py-4" role="contentinfo">
         <div class="container text-center">
             <p class="mb-2">&copy; 2025 Equipe Yupi. Todos os direitos reservados.</p>
-            <p class="small text-muted">Desenvolvido pela Equipe Yupi</p>
+            <p class="small text-muted">Desenvolvido com <span class="text-danger" aria-label="amor">❤</span> pela Equipe Yupi</p>
         </div>
     </footer>
 
     <!-- Notification Container -->
-    <div id="notificationContainer"></div>
+    <div id="notificationContainer" aria-live="polite" aria-atomic="true"></div>
 
     <!-- Bootstrap JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
